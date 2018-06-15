@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} / feedUpdate{% endblock %}
+
+{% block content %}
+    <div id="chapters">
+        <h1>{{ list.title }}</h1>
+
+        {% for chapter in list.chapters %}
+            <div id="chapters">
+                <b class="pointer">» </b>
+                <a target="_blank" href="{{ chapter.href }}">
+                    {% if list.multibook %} <b>{{ chapter.title }}</b>: {% endif %}
+                    {{ chapter.name }}</a>
+                <a class="datetime">posted on {{chapter.datetime}}</a>
+            </div>
+        {% empty %}
+            <h1>No chapters</h1>
+        {% endfor %}
+    </div>
+{% endblock %}
