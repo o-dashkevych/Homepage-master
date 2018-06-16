@@ -1,63 +1,115 @@
 body {
-    background-color: black;
-    color: white;
+    color: black;
+    font-size: 16px
 }
+
+a, a:visited, a:link, a:active {
+    color: black;
+}
+
 #content-header {
-    color: white;
+    color: black;
     font-size: 30px;
 }
+
 nav.navbar {
-    background-color: white;
 }
+
 div#chapters div {
     #height: 35px;
     font-size: larger;
 }
+
 div#chapters a {
-    color: #212529;
 }
+
 div#chapters a:link {
-    color: white;
 }
+
 div#chapters a:visited {
-    color: grey;
+
 }
+
 div#chapters div a:nth-child(2) {
     cursor: pointer;
 }
+
 div#chapters div a:nth-child(2):link:hover {
     color: greenyellow;
 }
+
 .pointer {
     color: red;
 }
+
 .datetime {
     color: #212529;
 }
-a,h1 {
+
+a, h1 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-h1,div#menu,div#menu a {
-    color: white;
-}
+
 div#menu a {
-    font-family: "Times New Roman";
     /* monospace font
     font-weight: 600;
     transform: scaleY(1.5);*/
     text-decoration: none;
 }
+
 div#content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 32px auto;
 }
+
+div#content form select, div#content form input{
+    font-size: 16px;
+}
+
+div#content form  p{
+    line-height: 2.5rem;
+}
+
+div#content form
+
+div#content iframe{
+    margin-top: 32px;
+}
+
 div#chapters a {
     text-decoration: none;
 }
+
 div#chapters b, div#chapters div a:nth-child(3) {
-     cursor: default;
+    cursor: default;
 }
+
 h1 {
     font-size: 48px;
     line-height: 24px;
+}
+
+table tr td {
+    border: 1px solid black;
+    padding: 5px;
+    color: black;
+}
+
+.tablehead {
+    background-color: whitesmoke;
+    font-weight: 600;
+}
+
+#menu {
+    padding: 8px;
+    background-color: whitesmoke;
+}
+
+#menu a {
+    padding: 16px;
+    line-height: 4rem;
+}
+
+table {
+    margin-top: 32px;
 }
